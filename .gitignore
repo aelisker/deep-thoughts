@@ -1,1 +1,4 @@
+/server/node_modules
+/server/utils/secret.js
+/client/node_modules
 /node_modules
