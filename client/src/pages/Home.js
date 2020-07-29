@@ -18,11 +18,12 @@ const Home = () => {
   return (
     <main>
       <div className='flex-row justify-space-between'>
-        {loggedIn && (
+        {/* initally called for short circuit && instead of ternary but this gave invalid token error */}
+        {loggedIn ? (
           <div className="col-12 mb-3">
             <ThoughtForm />
           </div>
-        )}
+        ) : ''}
         <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
           {loading ? (
             <div>Loading...</div>
